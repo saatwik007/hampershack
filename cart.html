@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Products Details- Hampershack </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="hampershack.html"><img src="C:\Users\pc\Desktop\Tanishq\hampers hack\logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="hampershack.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="C:\Users\pc\Desktop\Tanishq\hampers hack\cart.png" width="30px" height="30px"></a>
+            <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\menu icon.png" class="menu-icon" onclick="menutoggle()"> </div>
+    </div>
+
+    <!------ cart items details ------>
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\choc.jpg">
+                        <div>
+                            <p>Asorted Chocolates</p>
+                            <small>Price: ₹400/-  (8 pc)</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹400.00/-</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\Plain choc.png">
+                        <div>
+                            <p>Plain Chocolates</p>
+                            <small>Price: ₹300/- (10 pc)</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹300.00/-</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\tb.jpg">
+                        <div>
+                            <p>Teddy(18 inch)</p>
+                            <small>Price: ₹950/-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹950.00/-</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₹1,650.00</td>
+                </tr>
+                <tr>
+                    <td>GST 18%</td>
+                    <td>₹297.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>₹1,947.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row"></div>
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>App Is Available For Android And IoS Users.</p>
+            </div>
+            <div class="App-logo">
+                <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\playstore.png">
+                <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\appstore.jpg">
+            </div>
+            <div class="footer-col-2">
+                <img src="C:\Users\pc\Desktop\Tanishq\hampers hack\water mark.png">
+                <p>A Sensation For Your Loved Ones.</p>
+            </div>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        <hr>
+        <p class="copyright"> Copyright 2021 - Hampers Hack</p>
+    </div>
+    <!-------js for toggle menu------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
